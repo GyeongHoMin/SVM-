@@ -1,29 +1,44 @@
-# 청소년 소셜미디어 사용과 정신건강 분석
+# Teen Mental Health Risk Prediction using SVM
 
-## 프로젝트 소개
+## Project Overview
 
-본 프로젝트는 Kaggle의 Teen Social Media Usage & Mental Health 데이터를 이용하여
-청소년의 우울 위험도를 예측하는 머신러닝 프로젝트입니다.
+This project predicts adolescent depression risk using the **Teen Social Media Usage & Mental Health** dataset from Kaggle.
 
-Support Vector Machine(SVM, RBF Kernel)을 이용하여
-Low / Medium / High 위험군을 분류하였습니다.
+A Support Vector Machine (SVM) with an RBF kernel was trained to classify depression risk into three categories:
+
+- Low
+- Medium
+- High
 
 ---
 
-## 사용 데이터
+## Dataset
 
-- Dataset : Teen Social Media Usage & Mental Health (Kaggle)
-- 약 2,500명의 청소년 데이터
+**Dataset Name**
 
-### 입력 변수
+Teen Social Media Usage & Mental Health
 
-- SNS Usage Time
-- Sleep Time
+**Source**
+
+https://www.kaggle.com/datasets/sureshbeekhani/teen-social-media-usage-and-mental-health
+
+> **Note**
+>
+> Download `Teen_Mental_Health_Dataset.csv` from the Kaggle dataset above and place it in the same directory as `svm_classification.m` before running the code.
+
+---
+
+## Features
+
+The following features were used for training.
+
+- Daily Social Media Usage Time
 - Stress Level
 - Anxiety Level
-- GPA
+- Sleep Hours
+- Academic Performance (GPA)
 
-### 목표 변수
+**Target Variable**
 
 - Depression Risk
   - Low
@@ -32,43 +47,52 @@ Low / Medium / High 위험군을 분류하였습니다.
 
 ---
 
-## 사용 기술
+## Machine Learning Model
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
-- Seaborn
+- Support Vector Machine (SVM)
+- RBF Kernel
+- One-vs-One Multi-class Classification
 
 ---
 
-## 진행 과정
+## Results
 
-1. 데이터 전처리
-2. 상관관계 분석
-3. Train / Test Split
-4. SVM(RBF) 모델 학습
-5. Confusion Matrix 분석
-6. ROC Curve 평가
-
----
-
-## 결과
-
-- Macro AUC : 0.905
-- High Risk Recall : 95%
-- Low Risk Recall : 82.5%
-- Medium Risk Recall : 53.2%
+- Correlation Heatmap
+- Scatter Plot
+- Confusion Matrix
+- ROC Curve
+- Accuracy
+- Macro AUC
 
 ---
 
-## 프로젝트 자료
+## Project Structure
 
-발표 PPT 포함
+```
+SVM-Classification/
+│
+├── README.md
+├── svm_classification.m
+```
 
 ---
 
-## 작성자
+## How to Run
+
+1. Download the dataset from Kaggle.
+2. Extract `Teen_Mental_Health_Dataset.csv`.
+3. Place the CSV file in the same folder as `svm_classification.m`.
+4. Open MATLAB.
+5. Run `svm_classification.m`.
+
+---
+
+## Programming Language
+
+- MATLAB
+
+---
+
+## Author
 
 Gyeong Ho Min
