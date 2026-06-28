@@ -24,7 +24,7 @@ https://www.kaggle.com/datasets/sureshbeekhani/teen-social-media-usage-and-menta
 
 > **Note**
 >
-> Download `Teen_Mental_Health_Dataset.csv` from the Kaggle dataset above and place it in the same directory as `svm_classification.m` before running the code.
+> Download `Teen_Mental_Health_Dataset.csv` from the Kaggle dataset above and place it in the same directory as `healthmental.m` before running the code.
 
 ---
 
